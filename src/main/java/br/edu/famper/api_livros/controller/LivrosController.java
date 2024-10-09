@@ -30,7 +30,7 @@ public class LivrosController {
 
     @PutMapping
     public ResponseEntity<Livros> update(@RequestBody Livros livros){
-        return livrosServices.save(livros);
+        return livrosServices.update(livros);
     }
 
     @DeleteMapping
